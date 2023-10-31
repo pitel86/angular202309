@@ -1,0 +1,11 @@
+<div class="rangers">
+  <div class="ranger" *ngFor="let ranger of powerRangers; let i = index">
+    <img src="{{ranger.imagen}}" alt="{{ranger.name}}" />
+    <p>{{ranger.name}}</p>
+    <p>{{ranger.robot}}</p>
+    <p>{{ranger.color}}</p>
+    <p *ngIf="!ranger.isAlive">{{i}}</p>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,13 @@
+.rangers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .ranger{
+        max-width: 300px;
+
+        img{
+            max-width: 100%;
+        }
+    }
+}
