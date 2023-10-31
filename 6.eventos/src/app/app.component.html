@@ -1,0 +1,13 @@
+<p (click)="diHola()">Click</p>
+
+<div (mouseenter)="entro('diuv1')" (mouseout)="salgo('div1')"></div>
+<div  (mouseenter)="entro('div2')" (mouseout)="salgo('div2')"></div>
+
+<input (change)="change()" />
+<input (input)="input()" />
+<input (focus)="focus()" />
+<input (blur)="blur()" />
+
+<p (click)="changePepito('juanito')">{{texto}}</p>
+
+<router-outlet></router-outlet>

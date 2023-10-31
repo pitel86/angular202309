@@ -1,0 +1,12 @@
+<!-- NGCLASS Damos la clase de la derecha si se cumple la condición a la izquierda -->
+<p [ngClass]="{rojo: !false, bgazul: true}">asopkdpoasdpo asdasd asd</p>
+<p [ngClass]="{azul: isBlue, verde: !isBlue}">asopkdpoasdpo asdasd asd</p>
+
+<p [ngClass]="{azul: superman.isAlive, rojo: !superman.isAlive, bgverde: superman.age > 25}">{{superman.name}}</p>
+
+<!-- NGSTYLE Asignamos a la propiedad de la derecha el valor a la izquierda -->
+
+<p [ngStyle]="{backgroundColor: 'red', color: 'white'}">asdaosjdopasjd</p>
+<p [ngStyle]="{backgroundColor: favoritos.bgColor, color: favoritos.color}">asdaosjdopasjd</p>
+
+<router-outlet></router-outlet>
