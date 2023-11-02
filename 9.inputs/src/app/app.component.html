@@ -1,0 +1,10 @@
+<!-- Los parametros(inputs) que le pasemos de un componente padre a hijo irán entre corchetes -->
+<app-button [texto]="'El texto que le envío'" [texto2]="'El segundo texto que le envío'"></app-button>
+<app-button [texto]="texto" [texto2]="texto2"></app-button>
+
+<app-button [texto]="'envio solo texto 1'"></app-button>
+<app-button [texto2]="'envío solo texto 2'"></app-button>
+
+
+<app-rangers [powerRangers]="powerRangers"></app-rangers>
+<router-outlet></router-outlet>

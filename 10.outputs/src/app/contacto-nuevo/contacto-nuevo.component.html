@@ -1,0 +1,5 @@
+<p>contacto-nuevo works!</p>
+<input type="text" placeholder="nombre" #nombre />
+<input type="text" placeholder="email" #email />
+<input type="number" placeholder="phone" #phone />
+<button (click)="enviarContacto({name:nombre.value, email: email.value, phone: toNumber(phone.value)})">Añadir</button>
