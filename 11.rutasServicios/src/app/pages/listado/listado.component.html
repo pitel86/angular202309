@@ -1,0 +1,11 @@
+<div>
+    <div *ngFor="let contacto of listado">
+        <p>{{contacto.name}}</p>
+        <p>{{contacto.phone}}</p>
+        <p>{{contacto.email}}</p>
+        <button (click)="llamar()">Llamar</button>
+    </div>
+</div>
+<div>
+    <app-newcontact></app-newcontact>
+</div>

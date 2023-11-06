@@ -1,0 +1,12 @@
+<form [formGroup]="contactForm" (ngSubmit)="addContact()">
+    <input placeholder="nombre" type="text" formControlName="name" />
+    <p *ngIf="(submitted && contactForm?.get('name')?.hasError('required'))">Este campo es requerido</p>
+    <input placeholder="email" type="text" formControlName="email" />
+    <p *ngIf="(submitted && contactForm?.get('email')?.hasError('required'))">Este campo es requerido</p>
+    <p *ngIf="(submitted && contactForm?.get('email')?.hasError('pattern'))">Este campo no tiene un formato correcto, tiene que ser un email</p>
+    
+    <input placeholder="telefono" type="number" formControlName="phone" />
+    <p *ngIf="(submitted && contactForm?.get('phone')?.hasError('required'))">Este campo es requerido</p>
+
+    <button>Añadir</button>
+</form>
